@@ -10,11 +10,11 @@ namespace SQLChallenges.ChallengeBonus
     public class ProfessorCourse
     {
         [ForeignKey(nameof(Professor))]
-        public int ProfessorId { get; set; }
+        public List<Professor> ProfessorId { get; set; }
         public virtual Professor Professor { get; set; }
 
         [ForeignKey(nameof(Course))]
-        public int CourseId { get; set; }
+        public List<Course> CourseId { get; set; }
         public virtual Course Course { get; set; }
     }
 }
