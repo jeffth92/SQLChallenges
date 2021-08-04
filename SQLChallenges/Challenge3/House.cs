@@ -11,8 +11,8 @@ namespace SQLChallenges.Challenge3
     {
         [Key]
         public int HouseId { get; set; }
-        public decimal NumberOfBedrooms { get; set; }
-        public decimal NumberOfBaths { get; set; }
+        public short NumberOfBedrooms { get; set; }
+        public short NumberOfBaths { get; set; }
         public decimal EstimatedValue { get; set; }
     }
 }
